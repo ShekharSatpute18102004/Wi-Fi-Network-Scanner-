@@ -36,7 +36,7 @@ Depending on the platform, the script uses either:
 ## 🚀 How to Run
 1. Clone or download the repo
 ```
-https://github.com/ShekharSatpute18102004/Wi-Fi-Network-Scanner-.git
+git clone https://github.com/ShekharSatpute18102004/Wi-Fi-Network-Scanner-.git
 cd wifi-network-scanner
 ```
 2. Run the script
