@@ -17,6 +17,7 @@ To create a Python-based scanner that lists all nearby Wi-Fi networks with:
 - Displays SSID, signal strength, and security type.
 - Cross-platform support (Windows and Linux).
 - Simple command-line interface.
+  
 ## 🧰 Requirements
 
 - Python 3.x
@@ -24,14 +25,23 @@ To create a Python-based scanner that lists all nearby Wi-Fi networks with:
   - `pywifi` (cross-platform, preferred for Windows/Linux)
   - `subprocess` or `os` for direct command-line interaction
 
-### Install dependencies:
-```bash
-pip install pywifi
-``` 
+## 📂 Project Structure
+```
+wifi-network-scanner/
+├── wifi_scanner.py # Command-line Wi-Fi scanner script
+├── wifi_scanner_gui.py # GUI-based scanner using Tkinter
+├── README.md               # Documentation file
+```
+
 ## ⚙️ How It Works
 Depending on the platform, the script uses either:
 - The ```pywifi``` library to access wireless interfaces and scan for available networks.
 - The ```subprocess``` module to run system commands (like ```netsh wlan show networks``` on Windows or ```iwlist``` on Linux).
+
+### Install dependencies:
+```
+pip install pywifi
+```
 
 ## 🚀 How to Run
 1. Clone or download the repo
@@ -45,28 +55,8 @@ python wifi_scanner.py
 ```
 ⚠️ Note: May require admin/sudo permissions on some systems.
 
-## 📂 Project Structure
-```
-wifi-network-scanner/
-├── wifi_scanner.py # Command-line Wi-Fi scanner script
-├── wifi_scanner_gui.py # GUI-based scanner using Tkinter
-├── README.md               # Documentation file
-```
-
-## Example Output
-```
-Scanning for Wi-Fi networks...
-Found 5 networks:
-
-SSID                           Signal     Security
--------------------------------------------------------
-HomeNetwork                    90%        WPA2-PSK
-CoffeeShopWiFi                 85%        Open
-OfficeNet                      80%        WPA2-PSK
-NeighborWiFi                   70%        WPA
-PublicWiFi                     45%        Open
-
-```
+### 📸 Screenshots
+<img width="372" alt="output 1" src="https://github.com/user-attachments/assets/e92260df-b5a1-4b8e-8ad2-b700701f1b3e" />
 
 ### 🔐 Permissions
 - On Windows, no admin is needed for most cases.
